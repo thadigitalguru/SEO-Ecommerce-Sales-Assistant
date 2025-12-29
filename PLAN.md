@@ -21,6 +21,13 @@
 - [ ] **CRO Components**: Sticky CTA, Exit Intent, and A/B test hooks.
 
 ## Phase 4: Deployment & Verification
-- [ ] Configure Firebase Hosting / Google Cloud.
-- [ ] Setup GitHub Actions Workflow.
-- [ ] Final Verification & Testing.
+- [x] Configure Firebase Hosting / Google Cloud.
+- [x] Setup GitHub Actions Workflow.
+- [x] Final Verification & Testing.
+
+## Phase 5: Advanced SEO & Content Expansion
+- [ ] **Keyword Research**: Tools for trending keyword discovery.
+- [ ] **Technical SEO Auditor**: Automated crawl and error detection.
+- [ ] **Competitor Analysis**: Spying on market leaders.
+- [ ] **Content Engine**: AI generator for blogs and social content.
+- [ ] **On-page Suite**: Enhanced editor with real-time SEO scoring.

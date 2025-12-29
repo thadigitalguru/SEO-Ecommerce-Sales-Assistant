@@ -47,7 +47,9 @@ src/
 │   ├── personalization/ # Tracking & Lifecycle engine
 │   ├── cro/          # Conversion optimization elements
 │   ├── analytics/    # AI Analytics & Audience Insights
-│   └── catalog/      # Product listing & details
+│   ├── catalog/      # Product listing & details
+│   ├── seo/          # Advanced SEO tools (Keywords, Technical)
+│   └── content/      # Content marketing generator
 ├── hooks/            # Shared custom hooks
 ├── pages/            # Routed page components (Lazy loaded)
 ├── store/            # Zustand state management

@@ -11,6 +11,9 @@ This document outlines the requirements for the SEO Ecommerce Sales Assistant.
 *   **Structured Data**: Product pages must include JSON-LD Schema.org markup.
 *   **Performance**: Core Web Vitals optimized (LCP < 2.5s).
 *   **Search Performance**: Product descriptions optimized for semantic relevance and organic search performance.
+*   **On-page Auditor**: Real-time feedback on keyword density, title length, and meta description impact.
+*   **Technical SEO**: Automatic identification of broken links, missing alt tags, and crawlability issues.
+*   **Keyword Research**: AI-powered identification of high-intent keywords based on market trends and search volume data.
 
 ### 2.2. Semantic Search
 *   **Search Interface**: Real-time search bar with debounce.
@@ -36,6 +39,8 @@ This document outlines the requirements for the SEO Ecommerce Sales Assistant.
 *   **Analytics Dashboard**: Visualize audience insights and search performance trends.
 *   **Smart Recommendations**: Recommend products based on semantic similarity and user lifecycle stage.
 *   **Automated SEO Insights**: AI-generated suggestions for improving product description search performance.
+*   **Content Marketing Generator**: AI-assisted creation of blog posts, social media copies, and informative articles based on trending keywords.
+*   **Competitor Analysis**: Monitor competitor keyword rankings, backlink profiles (mocked/API), and content strategies to uncover outranking opportunities.
 
 ## 3. Non-Functional Requirements
 *   **Scalability**: Built on Google Cloud Serverless architecture.
