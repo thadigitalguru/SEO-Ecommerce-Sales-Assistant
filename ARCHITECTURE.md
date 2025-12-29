@@ -2,13 +2,13 @@
 
 ## System Overview
 
-The application follows a modern Single Page Application (SPA) architecture with cloud-native backend services on Azure.
+The application follows a modern Single Page Application (SPA) architecture with cloud-native backend services on Google Cloud.
 
 ## Data Flow & Components
 
 ```mermaid
 graph TD
-    User[User] -->|Visits| CDN[Azure Static Web Apps CDN]
+    User[User] -->|Visits| CDN[Firebase Hosting CDN]
     CDN -->|Serves| Client[React App (Vite)]
     
     subgraph "Frontend (Client)"
@@ -18,10 +18,10 @@ graph TD
         Client -->|Insights| Analytics[AI Analytics Dashboard]
     end
     
-    subgraph "Azure Backend Services"
-        Client -->|Search Query| API[Azure Functions / API]
-        API -->|Get Embedding| OpenAI[Azure OpenAI]
-        API -->|Vector Search| Search[Azure AI Search]
+    subgraph "Google Cloud Backend Services"
+        Client -->|Search Query| API[Google Cloud Functions / API]
+        API -->|Get Embedding| VertexAI[Google Vertex AI]
+        API -->|Vector Search| Search[Vertex AI Search]
         Search -->|Results| API
         API -->|JSON| Client
     end
@@ -31,7 +31,7 @@ graph TD
 
 ```
 .agent/               # Agent rules and workflows
-api/                  # Azure Functions (Backend API)
+api/                  # Google Cloud Functions (Backend API)
 public/               # Static assets (robots.txt, sitemap.xml)
 src/
 ├── api/              # API client wrappers (Fetch/Axios)
@@ -60,4 +60,4 @@ src/
 1.  **SEO**: Use `react-helmet-async` for dynamic tags and `vite-plugin-prerender` for static generation of key pages.
 2.  **Performance**: Route-based code splitting using `React.lazy` and `Suspense`.
 3.  **Personalization**: Lightweight tracking via `localStorage` and rule-based engine in `features/personalization`.
-4.  **Azure**: API folder mapped to Azure Functions for secure AI search processing.
+4.  **Google Cloud**: API folder mapped to Google Cloud Functions for secure AI search processing.

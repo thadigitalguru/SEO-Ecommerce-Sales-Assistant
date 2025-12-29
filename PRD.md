@@ -14,8 +14,8 @@ This document outlines the requirements for the SEO Ecommerce Sales Assistant.
 
 ### 2.2. Semantic Search
 *   **Search Interface**: Real-time search bar with debounce.
-*   **AI Integration**: Queries processed via Azure OpenAI to generate embeddings.
-*   **Vector Search**: Azure AI Search used to find semantically similar products.
+*   **AI Integration**: Queries processed via Google Vertex AI to generate embeddings.
+*   **Vector Search**: Google Vertex AI Search used to find semantically similar products.
 *   **Fallback**: Keyword-based fallback if AI search fails or for simple queries.
 *   **Audience Insights**: Analyze semantic search queries to identify emerging trends and user intent clusters.
 
@@ -38,6 +38,6 @@ This document outlines the requirements for the SEO Ecommerce Sales Assistant.
 *   **Automated SEO Insights**: AI-generated suggestions for improving product description search performance.
 
 ## 3. Non-Functional Requirements
-*   **Scalability**: Built on Azure Serverless architecture.
-*   **Security**: API keys managed via Azure Key Vault / Environment Variables. No keys in client code.
+*   **Scalability**: Built on Google Cloud Serverless architecture.
+*   **Security**: API keys managed via Google Secret Manager / Environment Variables. No keys in client code.
 *   **Accessibility**: WCAG 2.1 AA compliant.
