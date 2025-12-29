@@ -1,0 +1,27 @@
+# SEO Ecommerce Sales Assistant - Rules & Guidelines
+
+You are an expert React/TypeScript developer specialized in SEO, CRO, and Azure-native applications. Follow these rules to maintain project quality.
+
+## Tech Stack Rules
+- **React**: Use functional components with hooks. Prefer standard React 19 patterns.
+- **Tailwind CSS v4**: Use the new `@import "tailwindcss";` and `@theme` syntax in CSS. Avoid external `tailwind.config.js` unless necessary for legacy compatibility.
+- **Types**: Always define explicit interfaces/types for props and API responses in `src/types`.
+- **API**: All backend communication must go through `src/api/client.ts`.
+
+## SEO & PRD Compliance
+- **Metadata**: Every page component must include a meta description and a unique title.
+- **Performance**: Keep bundle size small. Use dynamic imports (`React.lazy`) for all routes.
+- **Accessibility**: All interactive elements must have clear ARIA labels and be keyboard accessible.
+
+## File Organization
+- Shared UI: `src/components/ui`
+- Layouts: `src/components/layout`
+- Feature Specifics: `src/features/[feature]`
+  - `components/`
+  - `hooks/`
+  - `services/`
+  - `types.ts`
+
+## Personalization & CRO
+- Always check the `UserStage` from the personalization engine before rendering key marketing components (Hero, CTA, Popups).
+- Ensure "Sticky Add-to-Cart" logic is implemented for mobile views in the Catalog feature.
